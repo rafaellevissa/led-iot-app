@@ -7,14 +7,15 @@
  */
 
 import React, {useEffect, useState} from 'react';
+
 import {openLink} from './utils';
+import {APP_URL} from '@env';
 
 const App = () => {
   const [statusBarStyle] = useState('dark-content');
 
   useEffect(() => {
-    const onOpenLink = async () =>
-      await openLink('http://3.80.75.203', statusBarStyle);
+    const onOpenLink = async () => await openLink(APP_URL, statusBarStyle);
     onOpenLink();
   }, [statusBarStyle]);
 
