@@ -1,4 +1,4 @@
-package com.example;
+package com.areopagus;
 
 import com.facebook.react.ReactActivity;
 import com.proyecto26.inappbrowser.RNInAppBrowserModule;
